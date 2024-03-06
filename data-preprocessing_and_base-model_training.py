@@ -19,9 +19,7 @@ tf.random.set_seed(
 
 """# Data loading and pre processing"""
 
-dataFrame = pd.read_csv('/content/final_data.csv', index_col=0)
-dfTemp = pd.read_csv('/content/final_data_adj.csv')
-dataFrame['Sadj'] = dfTemp.Sadj
+dataFrame = pd.read_csv('/content/final_data_adj.csv')
 dataFrame.head()
 
 from sklearn.impute import SimpleImputer
